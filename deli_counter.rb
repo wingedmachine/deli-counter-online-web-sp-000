@@ -1,3 +1,11 @@
 def line(deli)
-  puts "The line is currently empty."
+  output = "The line is currently"
+  if deli.size == 0
+    output += " empty."
+  else
+    output += ":"
+    deli.each_with_index do |person|
+      output += " #{index + 1}. #{name}"
+    end
+  end
 end
