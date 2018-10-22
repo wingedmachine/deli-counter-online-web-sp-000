@@ -8,4 +8,5 @@ def line(deli)
       output += " #{index + 1}. #{name}"
     end
   end
+  puts output
 end
