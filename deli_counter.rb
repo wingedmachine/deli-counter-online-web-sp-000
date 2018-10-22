@@ -4,7 +4,7 @@ def line(deli)
     output += " empty."
   else
     output += ":"
-    deli.each_with_index do |person|
+    deli.each_with_index do |person, index|
       output += " #{index + 1}. #{name}"
     end
   end
